@@ -11,7 +11,7 @@ function App() {
     setTodoList([...todoList, { id: uuid(), text: todo, completed: false }]);
     setTodo("");
   };
-
+//toggle
   const toggleComplete = (id) => {
     setTodoList(todoList.map(item =>
       item.id === id ? { ...item, completed: !item.completed } : item
